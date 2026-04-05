@@ -10,6 +10,7 @@ from app.config import settings
 #     response = client.get("/")
 #     assert response.status_code == 200
 #     assert response.json() == {"message": "Hello World"}
+# coverup change to add in github
 
 def test_create_usser(client):
     response = client.post("/users/", json={"email": "helloworld@gmail.com", "password": "password123"})
